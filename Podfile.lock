@@ -1,0 +1,15 @@
+PODS:
+  - GMStepper (2.1)
+  - TextFieldEffects (1.4.0)
+
+DEPENDENCIES:
+  - GMStepper
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  GMStepper: 8994824040d57d952134e409b7724d05a1a41c18
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+
+PODFILE CHECKSUM: aca56a060d161113752f67702e48387e65ecd6d1
+
+COCOAPODS: 1.4.0

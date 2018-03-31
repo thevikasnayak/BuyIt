@@ -1,0 +1,1063 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00846C9C995316D8AB4D6A7F880CA089 /* Pods-BuyItShoppingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E56D11CA5EE118FBD96DA226A9CBFCB /* Pods-BuyItShoppingApp-dummy.m */; };
+		04AAEC41029441B0DF2B9BC7DEE539E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		098714C4F7DD93AB483735FF9E37C7A9 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137EAF3C96D6C53EA3CCB1E6A72510D /* GMStepper.swift */; };
+		09D6681B8AC1ECE2B0ACC7C5AD3CD363 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281506F1F70DA5693EAB58DE312D9419 /* KaedeTextField.swift */; };
+		1B744E13637E055BE7A42121EAAD72C2 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC590D62CD2AF8122F6FFC30DDA89408 /* MinoruTextField.swift */; };
+		1CDC97947D4A082F0B4900F976248631 /* Pods-BuyItShoppingAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C49DE197A7BFBD8B501272436BB8B9 /* Pods-BuyItShoppingAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C99C7168BDB30280AF04CF94B8432FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3608AC8D72B1CD5F15409798D6CD793C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3AD5B92000C2944CECF70431F60F7786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5481B6935298147A126BA844E03FD8D4 /* Pods-BuyItShoppingApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 092926735A942059EB9CBC7F7890F338 /* Pods-BuyItShoppingApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B444875CAFF19EFD6131E1D6BC974BC /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6C87FE8C2D92519E002149652B350 /* HoshiTextField.swift */; };
+		66DE28BD0000C8D4DADE651A934FE57F /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D32BC1BBA5FD41210A7670CE510AB819 /* TextFieldEffects-dummy.m */; };
+		682EBCD634C7AC2D58252E962DD6276B /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BE9179B59276B90C50E22F5DB396FD /* AkiraTextField.swift */; };
+		6CDEB95A4B2FE8E70A1C27FB588CADA2 /* GMStepper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F79070CFB8FA8D440F98BC3A0195FF1 /* GMStepper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76766F31BE38E849E0105D848299727B /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D151439B1B20F66F2E7A639DF8BD2F5 /* YoshikoTextField.swift */; };
+		898F6B09EE2A5388ED982CEC7C02CC6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		90812A4D6B158252D81D6B859D1496B2 /* Pods-BuyItShoppingAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A854BC7502771D836709A435E1A18B2B /* Pods-BuyItShoppingAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C141C14535477DAF4450FC9865E29AF /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899003868C790E46E2245676D35A5774 /* JiroTextField.swift */; };
+		A6AC2C90DA7397AD451D65F634A35FEF /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1207E5BA125EE4319B442ADA1B97615 /* MadokaTextField.swift */; };
+		AF36309D5BC96F75E90B88372B98B549 /* GMStepper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C193093FFE96D4C9F0E70A9953B258 /* GMStepper-dummy.m */; };
+		CE3DB04DBE535D687351B4F0271586CA /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 884824F55E581CF5FAF43EAFB3E839C0 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE872360A5BA5D068F4ECCD7E34469A8 /* Pods-BuyItShoppingAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5653D1C684E446C3B6AAE2593F1BDA /* Pods-BuyItShoppingAppUITests-dummy.m */; };
+		E516B717A333BF0E4A058730CA1BD8E3 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECF94E403DDF6E0C7C1B2205EC13AA /* TextFieldEffects.swift */; };
+		ED7D6736755D923A97AEEC0268FCBCB4 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865578C484CB3875D0EBE078AD08620 /* YokoTextField.swift */; };
+		F5ECAC2735C6C0F330476CE445C8DA14 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D3175FE38B5CABA4EF1197A3BEEB9 /* IsaoTextField.swift */; };
+		F95672F42832819A4A4399D9B410C4C8 /* Pods-BuyItShoppingAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75331DA70ECBDE76663455E470173881 /* Pods-BuyItShoppingAppTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CB6AFB9DDFCDF2FD5FDF9DA4CA91AC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DB34ADEAC543008FDA771D13AE6F534;
+			remoteInfo = GMStepper;
+		};
+		329B294D8074A894EE6FD9C1A4A930CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 888C8A53680081B0BFA380CA6734F2D4;
+			remoteInfo = TextFieldEffects;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038A8F7E07116F98DC1BC294FDACEFD0 /* Pods-BuyItShoppingAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BuyItShoppingAppTests-resources.sh"; sourceTree = "<group>"; };
+		043CDEA3B4B09561404C30A248DB868E /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		04ECF94E403DDF6E0C7C1B2205EC13AA /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		0865578C484CB3875D0EBE078AD08620 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		092926735A942059EB9CBC7F7890F338 /* Pods-BuyItShoppingApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BuyItShoppingApp-umbrella.h"; sourceTree = "<group>"; };
+		0A801C92420D2B671252F8B386E5B710 /* Pods-BuyItShoppingApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BuyItShoppingApp-resources.sh"; sourceTree = "<group>"; };
+		0B48F45B295D916C6559DE93FE9C05D5 /* Pods_BuyItShoppingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BuyItShoppingAppUITests.framework; path = "Pods-BuyItShoppingAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ECEAF174082753A85EF4D387F2D6068 /* Pods-BuyItShoppingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BuyItShoppingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		146C9625B129E0E13E66EADC177FE9EC /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		1FCB4C0E7B3BE343236CD1B57EC621C3 /* Pods-BuyItShoppingAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BuyItShoppingAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		281506F1F70DA5693EAB58DE312D9419 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		3956A50D6414F8D52EB3D0661350548D /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		3D98F88E96E164B05990ADC8E9A9E496 /* Pods-BuyItShoppingAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BuyItShoppingAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		472D62350161C45FF1130F363DD199F8 /* Pods_BuyItShoppingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BuyItShoppingAppTests.framework; path = "Pods-BuyItShoppingAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E56D11CA5EE118FBD96DA226A9CBFCB /* Pods-BuyItShoppingApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BuyItShoppingApp-dummy.m"; sourceTree = "<group>"; };
+		4F79070CFB8FA8D440F98BC3A0195FF1 /* GMStepper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GMStepper-umbrella.h"; sourceTree = "<group>"; };
+		54357783AA8C525128C4FB2528893A8F /* GMStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GMStepper.framework; path = GMStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5653D1C684E446C3B6AAE2593F1BDA /* Pods-BuyItShoppingAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BuyItShoppingAppUITests-dummy.m"; sourceTree = "<group>"; };
+		60F980FD66E1F7121434C656A745A1F1 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62FB55D5215A21A7CA22819E6ED81B83 /* GMStepper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GMStepper.xcconfig; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		660CD3E8883313814228A30463E7D45E /* Pods-BuyItShoppingAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BuyItShoppingAppUITests-resources.sh"; sourceTree = "<group>"; };
+		7137EAF3C96D6C53EA3CCB1E6A72510D /* GMStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GMStepper.swift; path = GMStepper/GMStepper.swift; sourceTree = "<group>"; };
+		75331DA70ECBDE76663455E470173881 /* Pods-BuyItShoppingAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BuyItShoppingAppTests-dummy.m"; sourceTree = "<group>"; };
+		7BED3EE879BB841BE44092495D34BCEC /* Pods-BuyItShoppingApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BuyItShoppingApp.modulemap"; sourceTree = "<group>"; };
+		828D6525BB16E642249486893386AD9B /* GMStepper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GMStepper.modulemap; sourceTree = "<group>"; };
+		852190D31D2E3258B60811B71592B55C /* Pods-BuyItShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BuyItShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
+		8598DC7CDB1B35B719BAD917B3F425A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		884824F55E581CF5FAF43EAFB3E839C0 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		899003868C790E46E2245676D35A5774 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		8B1D3175FE38B5CABA4EF1197A3BEEB9 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		8D151439B1B20F66F2E7A639DF8BD2F5 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		8EB6C87FE8C2D92519E002149652B350 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		92F5EEF8293D2332BBBA388C131FC4E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		940AA1EED52A1375CAAC80C845627BE4 /* Pods-BuyItShoppingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BuyItShoppingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		991463277DA87CB3C29871D57E83DD34 /* Pods-BuyItShoppingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BuyItShoppingAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		99906D541D09C86BF2DD5C2C6A66BFDF /* Pods-BuyItShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BuyItShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9BBF7C1B7CA88E5FBC2E5FF5B1598FD8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A854BC7502771D836709A435E1A18B2B /* Pods-BuyItShoppingAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BuyItShoppingAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		A8C193093FFE96D4C9F0E70A9953B258 /* GMStepper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GMStepper-dummy.m"; sourceTree = "<group>"; };
+		B1207E5BA125EE4319B442ADA1B97615 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		BBC4EA2E3A517C881682A450DD97FE55 /* Pods-BuyItShoppingAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BuyItShoppingAppUITests.modulemap"; sourceTree = "<group>"; };
+		BC590D62CD2AF8122F6FFC30DDA89408 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		C1BF432960C241299DAE20456183BF17 /* Pods-BuyItShoppingApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BuyItShoppingApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		C3D0AD031D9DE6147E1F8144A2C84CCD /* Pods_BuyItShoppingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BuyItShoppingApp.framework; path = "Pods-BuyItShoppingApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6E2EDD2BC7225CF597C35370FB943A4 /* Pods-BuyItShoppingApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BuyItShoppingApp-frameworks.sh"; sourceTree = "<group>"; };
+		CE78E1BD863073CE9A492C14E636F735 /* Pods-BuyItShoppingAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BuyItShoppingAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0D66FADCADBFC8DB73B24BDD299FEE6 /* Pods-BuyItShoppingAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BuyItShoppingAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D32BC1BBA5FD41210A7670CE510AB819 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		D6271D0D6F8E5ABC116B1E8DA7299A32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6BE9179B59276B90C50E22F5DB396FD /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		DDE923D3D5FF1F07FC77095FACF21380 /* Pods-BuyItShoppingApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BuyItShoppingApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DF6142889F8997CE91663ED5DD2546E7 /* Pods-BuyItShoppingAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BuyItShoppingAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		E76F9D9C0A973BFD5F38DE1B0C6346C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8397BB7736B9EF81E8FB43AA78E886A /* GMStepper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GMStepper-prefix.pch"; sourceTree = "<group>"; };
+		E9C49DE197A7BFBD8B501272436BB8B9 /* Pods-BuyItShoppingAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BuyItShoppingAppTests-umbrella.h"; sourceTree = "<group>"; };
+		EC2E52B8D087FC9E4741B68EBC5FDBE2 /* Pods-BuyItShoppingAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BuyItShoppingAppTests.modulemap"; sourceTree = "<group>"; };
+		ED3153C4C5679B63FF4E51202842EF11 /* Pods-BuyItShoppingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BuyItShoppingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB84CC917624D6EDEC9F51B1A225064E /* Pods-BuyItShoppingAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BuyItShoppingAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E1E2A5627935BE24A4A33B0E8F30114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD5B92000C2944CECF70431F60F7786 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428703DE1FDDBE66C7B15AB35ECC1583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C99C7168BDB30280AF04CF94B8432FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDB41CB0BE26227D2958074BA0D4ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3608AC8D72B1CD5F15409798D6CD793C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4A6345387744368D86EB57779E6EB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				898F6B09EE2A5388ED982CEC7C02CC6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65E00D04A60030DA4062A752E165A00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AAEC41029441B0DF2B9BC7DEE539E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12AD3677070FB24C7CB5012A979B9EBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54357783AA8C525128C4FB2528893A8F /* GMStepper.framework */,
+				C3D0AD031D9DE6147E1F8144A2C84CCD /* Pods_BuyItShoppingApp.framework */,
+				472D62350161C45FF1130F363DD199F8 /* Pods_BuyItShoppingAppTests.framework */,
+				0B48F45B295D916C6559DE93FE9C05D5 /* Pods_BuyItShoppingAppUITests.framework */,
+				60F980FD66E1F7121434C656A745A1F1 /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		281F6195EC3C986865CC21989DCEBD1E /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				D6BE9179B59276B90C50E22F5DB396FD /* AkiraTextField.swift */,
+				8EB6C87FE8C2D92519E002149652B350 /* HoshiTextField.swift */,
+				8B1D3175FE38B5CABA4EF1197A3BEEB9 /* IsaoTextField.swift */,
+				899003868C790E46E2245676D35A5774 /* JiroTextField.swift */,
+				281506F1F70DA5693EAB58DE312D9419 /* KaedeTextField.swift */,
+				B1207E5BA125EE4319B442ADA1B97615 /* MadokaTextField.swift */,
+				BC590D62CD2AF8122F6FFC30DDA89408 /* MinoruTextField.swift */,
+				04ECF94E403DDF6E0C7C1B2205EC13AA /* TextFieldEffects.swift */,
+				0865578C484CB3875D0EBE078AD08620 /* YokoTextField.swift */,
+				8D151439B1B20F66F2E7A639DF8BD2F5 /* YoshikoTextField.swift */,
+				29D75FECE1AE0835FA5099F12C932CB6 /* Support Files */,
+			);
+			name = TextFieldEffects;
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		29D75FECE1AE0835FA5099F12C932CB6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8598DC7CDB1B35B719BAD917B3F425A9 /* Info.plist */,
+				3956A50D6414F8D52EB3D0661350548D /* TextFieldEffects.modulemap */,
+				043CDEA3B4B09561404C30A248DB868E /* TextFieldEffects.xcconfig */,
+				D32BC1BBA5FD41210A7670CE510AB819 /* TextFieldEffects-dummy.m */,
+				146C9625B129E0E13E66EADC177FE9EC /* TextFieldEffects-prefix.pch */,
+				884824F55E581CF5FAF43EAFB3E839C0 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		53EC6C836D2DE396C8FABFBDAB8C594C /* Pods-BuyItShoppingApp */ = {
+			isa = PBXGroup;
+			children = (
+				E76F9D9C0A973BFD5F38DE1B0C6346C8 /* Info.plist */,
+				7BED3EE879BB841BE44092495D34BCEC /* Pods-BuyItShoppingApp.modulemap */,
+				DDE923D3D5FF1F07FC77095FACF21380 /* Pods-BuyItShoppingApp-acknowledgements.markdown */,
+				C1BF432960C241299DAE20456183BF17 /* Pods-BuyItShoppingApp-acknowledgements.plist */,
+				4E56D11CA5EE118FBD96DA226A9CBFCB /* Pods-BuyItShoppingApp-dummy.m */,
+				C6E2EDD2BC7225CF597C35370FB943A4 /* Pods-BuyItShoppingApp-frameworks.sh */,
+				0A801C92420D2B671252F8B386E5B710 /* Pods-BuyItShoppingApp-resources.sh */,
+				092926735A942059EB9CBC7F7890F338 /* Pods-BuyItShoppingApp-umbrella.h */,
+				99906D541D09C86BF2DD5C2C6A66BFDF /* Pods-BuyItShoppingApp.debug.xcconfig */,
+				852190D31D2E3258B60811B71592B55C /* Pods-BuyItShoppingApp.release.xcconfig */,
+			);
+			name = "Pods-BuyItShoppingApp";
+			path = "Target Support Files/Pods-BuyItShoppingApp";
+			sourceTree = "<group>";
+		};
+		58024343DB647E9B203AE2DF1827544A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3AF0A533DD7CB280B4C6B7F30CD01BD /* GMStepper */,
+				281F6195EC3C986865CC21989DCEBD1E /* TextFieldEffects */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				58024343DB647E9B203AE2DF1827544A /* Pods */,
+				12AD3677070FB24C7CB5012A979B9EBB /* Products */,
+				B7DDC2F93D0C69C3C6AD576A9670FD0D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9B48CB9DE1D4B9954E4E5125CE7C34E2 /* Pods-BuyItShoppingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				92F5EEF8293D2332BBBA388C131FC4E6 /* Info.plist */,
+				EC2E52B8D087FC9E4741B68EBC5FDBE2 /* Pods-BuyItShoppingAppTests.modulemap */,
+				CE78E1BD863073CE9A492C14E636F735 /* Pods-BuyItShoppingAppTests-acknowledgements.markdown */,
+				1FCB4C0E7B3BE343236CD1B57EC621C3 /* Pods-BuyItShoppingAppTests-acknowledgements.plist */,
+				75331DA70ECBDE76663455E470173881 /* Pods-BuyItShoppingAppTests-dummy.m */,
+				DF6142889F8997CE91663ED5DD2546E7 /* Pods-BuyItShoppingAppTests-frameworks.sh */,
+				038A8F7E07116F98DC1BC294FDACEFD0 /* Pods-BuyItShoppingAppTests-resources.sh */,
+				E9C49DE197A7BFBD8B501272436BB8B9 /* Pods-BuyItShoppingAppTests-umbrella.h */,
+				ED3153C4C5679B63FF4E51202842EF11 /* Pods-BuyItShoppingAppTests.debug.xcconfig */,
+				991463277DA87CB3C29871D57E83DD34 /* Pods-BuyItShoppingAppTests.release.xcconfig */,
+			);
+			name = "Pods-BuyItShoppingAppTests";
+			path = "Target Support Files/Pods-BuyItShoppingAppTests";
+			sourceTree = "<group>";
+		};
+		AF872B08B0E5455F4BC38DB0A46794CE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				828D6525BB16E642249486893386AD9B /* GMStepper.modulemap */,
+				62FB55D5215A21A7CA22819E6ED81B83 /* GMStepper.xcconfig */,
+				A8C193093FFE96D4C9F0E70A9953B258 /* GMStepper-dummy.m */,
+				E8397BB7736B9EF81E8FB43AA78E886A /* GMStepper-prefix.pch */,
+				4F79070CFB8FA8D440F98BC3A0195FF1 /* GMStepper-umbrella.h */,
+				9BBF7C1B7CA88E5FBC2E5FF5B1598FD8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GMStepper";
+			sourceTree = "<group>";
+		};
+		B7DDC2F93D0C69C3C6AD576A9670FD0D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				53EC6C836D2DE396C8FABFBDAB8C594C /* Pods-BuyItShoppingApp */,
+				9B48CB9DE1D4B9954E4E5125CE7C34E2 /* Pods-BuyItShoppingAppTests */,
+				F4724A5ED2E7399F6EDA29AD923BCFAF /* Pods-BuyItShoppingAppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3AF0A533DD7CB280B4C6B7F30CD01BD /* GMStepper */ = {
+			isa = PBXGroup;
+			children = (
+				7137EAF3C96D6C53EA3CCB1E6A72510D /* GMStepper.swift */,
+				AF872B08B0E5455F4BC38DB0A46794CE /* Support Files */,
+			);
+			name = GMStepper;
+			path = GMStepper;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F4724A5ED2E7399F6EDA29AD923BCFAF /* Pods-BuyItShoppingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6271D0D6F8E5ABC116B1E8DA7299A32 /* Info.plist */,
+				BBC4EA2E3A517C881682A450DD97FE55 /* Pods-BuyItShoppingAppUITests.modulemap */,
+				FB84CC917624D6EDEC9F51B1A225064E /* Pods-BuyItShoppingAppUITests-acknowledgements.markdown */,
+				D0D66FADCADBFC8DB73B24BDD299FEE6 /* Pods-BuyItShoppingAppUITests-acknowledgements.plist */,
+				5A5653D1C684E446C3B6AAE2593F1BDA /* Pods-BuyItShoppingAppUITests-dummy.m */,
+				3D98F88E96E164B05990ADC8E9A9E496 /* Pods-BuyItShoppingAppUITests-frameworks.sh */,
+				660CD3E8883313814228A30463E7D45E /* Pods-BuyItShoppingAppUITests-resources.sh */,
+				A854BC7502771D836709A435E1A18B2B /* Pods-BuyItShoppingAppUITests-umbrella.h */,
+				940AA1EED52A1375CAAC80C845627BE4 /* Pods-BuyItShoppingAppUITests.debug.xcconfig */,
+				0ECEAF174082753A85EF4D387F2D6068 /* Pods-BuyItShoppingAppUITests.release.xcconfig */,
+			);
+			name = "Pods-BuyItShoppingAppUITests";
+			path = "Target Support Files/Pods-BuyItShoppingAppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		429DB8081632D71C8613DB3F5B3020E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CDC97947D4A082F0B4900F976248631 /* Pods-BuyItShoppingAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D03B2ABE8F1F640EEEDCD8A87104BFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDEB95A4B2FE8E70A1C27FB588CADA2 /* GMStepper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715183B132AC67D8ED79A4A216057D31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5481B6935298147A126BA844E03FD8D4 /* Pods-BuyItShoppingApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EE26D5A37064A9D9CA39C150EFE1C03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90812A4D6B158252D81D6B859D1496B2 /* Pods-BuyItShoppingAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FFDFFAFBF606BE2164DB36BFE18FA66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3DB04DBE535D687351B4F0271586CA /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12FDFACCD71FB57FE10F5077456A8A8D /* Pods-BuyItShoppingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C1A2EAFC552E20128DB08FF86672B1 /* Build configuration list for PBXNativeTarget "Pods-BuyItShoppingApp" */;
+			buildPhases = (
+				70804B61FE754464F2B0B2ADAAB7C816 /* Sources */,
+				428703DE1FDDBE66C7B15AB35ECC1583 /* Frameworks */,
+				715183B132AC67D8ED79A4A216057D31 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E98BFBE7A9046484D133CB29CDAC03DF /* PBXTargetDependency */,
+				D68A68EA5D7CA4555A7F30017746A856 /* PBXTargetDependency */,
+			);
+			name = "Pods-BuyItShoppingApp";
+			productName = "Pods-BuyItShoppingApp";
+			productReference = C3D0AD031D9DE6147E1F8144A2C84CCD /* Pods_BuyItShoppingApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		34090E38DEF65FB7382F712F0647F26E /* Pods-BuyItShoppingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B4247A753F661F21C4579C40E17F08 /* Build configuration list for PBXNativeTarget "Pods-BuyItShoppingAppTests" */;
+			buildPhases = (
+				E18BE0FF60923E5C280C4FF3C79A14AB /* Sources */,
+				2E1E2A5627935BE24A4A33B0E8F30114 /* Frameworks */,
+				429DB8081632D71C8613DB3F5B3020E6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BuyItShoppingAppTests";
+			productName = "Pods-BuyItShoppingAppTests";
+			productReference = 472D62350161C45FF1130F363DD199F8 /* Pods_BuyItShoppingAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6DB34ADEAC543008FDA771D13AE6F534 /* GMStepper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9893C6E2447721A89CADFE69A1831E9 /* Build configuration list for PBXNativeTarget "GMStepper" */;
+			buildPhases = (
+				5518B22CBCC6C7324B20386255E5C2D6 /* Sources */,
+				8B4A6345387744368D86EB57779E6EB5 /* Frameworks */,
+				5D03B2ABE8F1F640EEEDCD8A87104BFC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GMStepper;
+			productName = GMStepper;
+			productReference = 54357783AA8C525128C4FB2528893A8F /* GMStepper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		888C8A53680081B0BFA380CA6734F2D4 /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248A9A383D8CCCC0AF56F0321026FA49 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				001EFB6D3391D438993C7E9C39295A4B /* Sources */,
+				E65E00D04A60030DA4062A752E165A00 /* Frameworks */,
+				7FFDFFAFBF606BE2164DB36BFE18FA66 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 60F980FD66E1F7121434C656A745A1F1 /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE6D6B7B92B95B5A85E58BE4F3FF3CEF /* Pods-BuyItShoppingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CFF4C0C803572E2E9011D09DC6C9E4C /* Build configuration list for PBXNativeTarget "Pods-BuyItShoppingAppUITests" */;
+			buildPhases = (
+				FA32C2FE2FAC43E26709D99971DE184F /* Sources */,
+				4DDB41CB0BE26227D2958074BA0D4ED9 /* Frameworks */,
+				7EE26D5A37064A9D9CA39C150EFE1C03 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BuyItShoppingAppUITests";
+			productName = "Pods-BuyItShoppingAppUITests";
+			productReference = 0B48F45B295D916C6559DE93FE9C05D5 /* Pods_BuyItShoppingAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 12AD3677070FB24C7CB5012A979B9EBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DB34ADEAC543008FDA771D13AE6F534 /* GMStepper */,
+				12FDFACCD71FB57FE10F5077456A8A8D /* Pods-BuyItShoppingApp */,
+				34090E38DEF65FB7382F712F0647F26E /* Pods-BuyItShoppingAppTests */,
+				EE6D6B7B92B95B5A85E58BE4F3FF3CEF /* Pods-BuyItShoppingAppUITests */,
+				888C8A53680081B0BFA380CA6734F2D4 /* TextFieldEffects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		001EFB6D3391D438993C7E9C39295A4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682EBCD634C7AC2D58252E962DD6276B /* AkiraTextField.swift in Sources */,
+				5B444875CAFF19EFD6131E1D6BC974BC /* HoshiTextField.swift in Sources */,
+				F5ECAC2735C6C0F330476CE445C8DA14 /* IsaoTextField.swift in Sources */,
+				9C141C14535477DAF4450FC9865E29AF /* JiroTextField.swift in Sources */,
+				09D6681B8AC1ECE2B0ACC7C5AD3CD363 /* KaedeTextField.swift in Sources */,
+				A6AC2C90DA7397AD451D65F634A35FEF /* MadokaTextField.swift in Sources */,
+				1B744E13637E055BE7A42121EAAD72C2 /* MinoruTextField.swift in Sources */,
+				66DE28BD0000C8D4DADE651A934FE57F /* TextFieldEffects-dummy.m in Sources */,
+				E516B717A333BF0E4A058730CA1BD8E3 /* TextFieldEffects.swift in Sources */,
+				ED7D6736755D923A97AEEC0268FCBCB4 /* YokoTextField.swift in Sources */,
+				76766F31BE38E849E0105D848299727B /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5518B22CBCC6C7324B20386255E5C2D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF36309D5BC96F75E90B88372B98B549 /* GMStepper-dummy.m in Sources */,
+				098714C4F7DD93AB483735FF9E37C7A9 /* GMStepper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70804B61FE754464F2B0B2ADAAB7C816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00846C9C995316D8AB4D6A7F880CA089 /* Pods-BuyItShoppingApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E18BE0FF60923E5C280C4FF3C79A14AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95672F42832819A4A4399D9B410C4C8 /* Pods-BuyItShoppingAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA32C2FE2FAC43E26709D99971DE184F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE872360A5BA5D068F4ECCD7E34469A8 /* Pods-BuyItShoppingAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D68A68EA5D7CA4555A7F30017746A856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = 888C8A53680081B0BFA380CA6734F2D4 /* TextFieldEffects */;
+			targetProxy = 329B294D8074A894EE6FD9C1A4A930CE /* PBXContainerItemProxy */;
+		};
+		E98BFBE7A9046484D133CB29CDAC03DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GMStepper;
+			target = 6DB34ADEAC543008FDA771D13AE6F534 /* GMStepper */;
+			targetProxy = 2CB6AFB9DDFCDF2FD5FDF9DA4CA91AC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13663572C55166C542FF58EB1ED5EC0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ECEAF174082753A85EF4D387F2D6068 /* Pods-BuyItShoppingAppUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BuyItShoppingAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BuyItShoppingAppUITests/Pods-BuyItShoppingAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BuyItShoppingAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1505DBE381E46EC10404757B7412A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043CDEA3B4B09561404C30A248DB868E /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		37AB02FE9A33A98F9D2300559A41E9A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62FB55D5215A21A7CA22819E6ED81B83 /* GMStepper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GMStepper/GMStepper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GMStepper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GMStepper/GMStepper.modulemap";
+				PRODUCT_NAME = GMStepper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38885E413696D4D494FD308A25476FC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 852190D31D2E3258B60811B71592B55C /* Pods-BuyItShoppingApp.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BuyItShoppingApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BuyItShoppingApp/Pods-BuyItShoppingApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BuyItShoppingApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		67463CC75534C3BCD9C804B2B08A9BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99906D541D09C86BF2DD5C2C6A66BFDF /* Pods-BuyItShoppingApp.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BuyItShoppingApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BuyItShoppingApp/Pods-BuyItShoppingApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BuyItShoppingApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8124B509F1D3EA450F3BA215A76557CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62FB55D5215A21A7CA22819E6ED81B83 /* GMStepper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GMStepper/GMStepper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GMStepper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GMStepper/GMStepper.modulemap";
+				PRODUCT_NAME = GMStepper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CFF5218FCBB0741A6C8AC771946326D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED3153C4C5679B63FF4E51202842EF11 /* Pods-BuyItShoppingAppTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BuyItShoppingAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BuyItShoppingAppTests/Pods-BuyItShoppingAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BuyItShoppingAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC898CB374A2D81C3ABE6BAAB89D323C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043CDEA3B4B09561404C30A248DB868E /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF52B50C780BEDB0A03992DE32042A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 940AA1EED52A1375CAAC80C845627BE4 /* Pods-BuyItShoppingAppUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BuyItShoppingAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BuyItShoppingAppUITests/Pods-BuyItShoppingAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BuyItShoppingAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA934D9C950FC31E93D5E43035B4CE9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 991463277DA87CB3C29871D57E83DD34 /* Pods-BuyItShoppingAppTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BuyItShoppingAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BuyItShoppingAppTests/Pods-BuyItShoppingAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BuyItShoppingAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03C1A2EAFC552E20128DB08FF86672B1 /* Build configuration list for PBXNativeTarget "Pods-BuyItShoppingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67463CC75534C3BCD9C804B2B08A9BD0 /* Debug */,
+				38885E413696D4D494FD308A25476FC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248A9A383D8CCCC0AF56F0321026FA49 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1505DBE381E46EC10404757B7412A65E /* Debug */,
+				DC898CB374A2D81C3ABE6BAAB89D323C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CFF4C0C803572E2E9011D09DC6C9E4C /* Build configuration list for PBXNativeTarget "Pods-BuyItShoppingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF52B50C780BEDB0A03992DE32042A4F /* Debug */,
+				13663572C55166C542FF58EB1ED5EC0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55B4247A753F661F21C4579C40E17F08 /* Build configuration list for PBXNativeTarget "Pods-BuyItShoppingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF5218FCBB0741A6C8AC771946326D2 /* Debug */,
+				FA934D9C950FC31E93D5E43035B4CE9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9893C6E2447721A89CADFE69A1831E9 /* Build configuration list for PBXNativeTarget "GMStepper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37AB02FE9A33A98F9D2300559A41E9A5 /* Debug */,
+				8124B509F1D3EA450F3BA215A76557CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
