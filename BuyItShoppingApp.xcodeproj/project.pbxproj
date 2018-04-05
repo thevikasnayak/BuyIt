@@ -24,6 +24,8 @@
 		8603BD8C20699083009E656A /* CameraSaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603BD8B20699083009E656A /* CameraSaveView.swift */; };
 		8603BD8E206990BD009E656A /* CameraCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603BD8D206990BD009E656A /* CameraCollectionView.swift */; };
 		8603BD90206990CD009E656A /* CameraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603BD8F206990CD009E656A /* CameraCollectionViewCell.swift */; };
+		860FAD5120754B27001589C0 /* SignupFetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860FAD5020754B27001589C0 /* SignupFetchData.swift */; };
+		860FAD5320754B45001589C0 /* SignupFetchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860FAD5220754B45001589C0 /* SignupFetchCell.swift */; };
 		86377C30206E8D0700A944F2 /* SideMenuCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86377C2F206E8D0700A944F2 /* SideMenuCallView.swift */; };
 		86377C32206E8D1E00A944F2 /* SideMenuEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86377C31206E8D1E00A944F2 /* SideMenuEmailView.swift */; };
 		86377C34206E8D3300A944F2 /* SideMenuAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86377C33206E8D3300A944F2 /* SideMenuAboutView.swift */; };
@@ -86,6 +88,8 @@
 		8603BD8B20699083009E656A /* CameraSaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSaveView.swift; sourceTree = "<group>"; };
 		8603BD8D206990BD009E656A /* CameraCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCollectionView.swift; sourceTree = "<group>"; };
 		8603BD8F206990CD009E656A /* CameraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCollectionViewCell.swift; sourceTree = "<group>"; };
+		860FAD5020754B27001589C0 /* SignupFetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFetchData.swift; sourceTree = "<group>"; };
+		860FAD5220754B45001589C0 /* SignupFetchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFetchCell.swift; sourceTree = "<group>"; };
 		86377C2F206E8D0700A944F2 /* SideMenuCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCallView.swift; sourceTree = "<group>"; };
 		86377C31206E8D1E00A944F2 /* SideMenuEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuEmailView.swift; sourceTree = "<group>"; };
 		86377C33206E8D3300A944F2 /* SideMenuAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuAboutView.swift; sourceTree = "<group>"; };
@@ -169,6 +173,15 @@
 			path = HomeView;
 			sourceTree = "<group>";
 		};
+		860FAD4F20754ADB001589C0 /* Fetch Data */ = {
+			isa = PBXGroup;
+			children = (
+				860FAD5020754B27001589C0 /* SignupFetchData.swift */,
+				860FAD5220754B45001589C0 /* SignupFetchCell.swift */,
+			);
+			path = "Fetch Data";
+			sourceTree = "<group>";
+		};
 		86377C2E206E8CD000A944F2 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +241,7 @@
 				86543020206CB6F900FACA36 /* DetailView */,
 				86D3569B206B766000AE2AE8 /* CartView */,
 				86377C2E206E8CD000A944F2 /* SideMenu */,
+				860FAD4F20754ADB001589C0 /* Fetch Data */,
 				86AD5AB72068F2610038FC21 /* Main.storyboard */,
 				86AD5ABD2068F2610038FC21 /* Assets.xcassets */,
 				86AD5ABF2068F2610038FC21 /* LaunchScreen.storyboard */,
@@ -636,11 +650,13 @@
 			files = (
 				86AD5AF02068F5CA0038FC21 /* SpalashView.swift in Sources */,
 				8603BD8C20699083009E656A /* CameraSaveView.swift in Sources */,
+				860FAD5320754B45001589C0 /* SignupFetchCell.swift in Sources */,
 				86377C30206E8D0700A944F2 /* SideMenuCallView.swift in Sources */,
 				8603BD8A20698254009E656A /* MobileSaveView.swift in Sources */,
 				86AD5ABC2068F2610038FC21 /* BuyItShoppingApp.xcdatamodeld in Sources */,
 				86377C32206E8D1E00A944F2 /* SideMenuEmailView.swift in Sources */,
 				8603BD7E20692B41009E656A /* DesktopSaveView.swift in Sources */,
+				860FAD5120754B27001589C0 /* SignupFetchData.swift in Sources */,
 				8603BD78206911EC009E656A /* HomeTableView.swift in Sources */,
 				8603BD862069813B009E656A /* MobileCollectionViewCell.swift in Sources */,
 				86543024206CB7A200FACA36 /* LaptopDetailView.swift in Sources */,
@@ -828,6 +844,7 @@
 			baseConfigurationReference = 85409047E0E9BE425E92CFD1 /* Pods-BuyItShoppingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FZH6P99TXU;
 				INFOPLIST_FILE = BuyItShoppingApp/Info.plist;
@@ -844,6 +861,7 @@
 			baseConfigurationReference = EDC601C519C249CA89381F15 /* Pods-BuyItShoppingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FZH6P99TXU;
 				INFOPLIST_FILE = BuyItShoppingApp/Info.plist;

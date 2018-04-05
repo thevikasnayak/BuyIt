@@ -7,9 +7,19 @@
 //
 
 import UIKit
+import CoreData
 
-class SignupFetchCell: UITableViewCell {
-
+class SignupFetchCell: UITableViewCell
+{
+    @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var cellName: UILabel!
+    @IBOutlet weak var cellContact: UILabel!
+    @IBOutlet weak var cellEmail: UILabel!
+    @IBOutlet weak var cellPassword1: UILabel!
+    @IBOutlet weak var cellPassword2: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

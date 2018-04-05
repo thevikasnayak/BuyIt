@@ -22,11 +22,25 @@ class DesktopDetailView: UIViewController
     var qty = 0;
     
     
+    //for data pass from collection view to this view controller
+    var dataImage : UIImage!
+    var dataPrice : String!
+    var dataName : String!
+    var dataQty : String!
+    var dataCompany : String!
+    var dataModel : String!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        //assign this all outlet to earlier which is uppar created data passing variables
+        ProductImage.image = dataImage
+        ProductName.text = dataName
+        ProductPrice.text = dataPrice
+        ProductQty.text = dataQty
+        ProductCompany.text = dataCompany
+        ProductModel.text = dataModel
     
         
     }
@@ -38,14 +52,18 @@ class DesktopDetailView: UIViewController
     
     @IBAction func BtnPlus(_ sender: Any)
     {
-        qty = Int(LabelQty.text!)!;
-        self.LabelQty.text = String(qty + 1);
+        if qty < 5 {
+            qty = qty + 1
+        }
+        self.LabelQty.text = String(qty)
     }
     
     @IBAction func BtnMinus(_ sender: Any)
     {
-        qty = Int(LabelQty.text!)!;
-        self.LabelQty.text = String(qty - 1);
+        if qty > 0 {
+            qty = qty - 1
+        }
+        self.LabelQty.text = String(qty)
     }
     
     @IBAction func btnBuyNow(_ sender: Any)

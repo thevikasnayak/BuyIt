@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class SignupView: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate
+class SignupView: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate
 {
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -52,7 +52,7 @@ class SignupView: UIViewController,UINavigationControllerDelegate,UIImagePickerC
             
             self.navigationItem.title = item?.fullName
             
-        
+            txtfullname.text = item?.fullName
             txtEmailid.text = item?.email
             txtContactno.text = item?.contact
             txtPassword.text = item?.password1
@@ -112,13 +112,13 @@ class SignupView: UIViewController,UINavigationControllerDelegate,UIImagePickerC
             item.image = UIImagePNGRepresentation(imageProfile.image!) as Data?
             
         } else {
-            
+
             item?.fullName = txtfullname.text
             item?.contact = txtContactno.text
             item?.email = txtEmailid.text
             item?.password1 = txtPassword.text
             item?.password2 = txtPassword2.text
-            
+
             item?.image = UIImagePNGRepresentation(imageProfile.image!) as Data?
         }
         do
@@ -126,7 +126,7 @@ class SignupView: UIViewController,UINavigationControllerDelegate,UIImagePickerC
             try pc.save()
         }
         catch {
-            
+            print("Data Save SuceessFully")
             print(error)
             return
         }
@@ -142,4 +142,5 @@ class SignupView: UIViewController,UINavigationControllerDelegate,UIImagePickerC
 
 
     
+
 

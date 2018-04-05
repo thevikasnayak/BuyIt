@@ -7,46 +7,130 @@
 //
 
 import UIKit
+import CoreData
 
-class SignupFetchData: UITableViewController {
-
+class SignupFetchData: UITableViewController ,NSFetchedResultsControllerDelegate
+{
+    var frc : NSFetchedResultsController = NSFetchedResultsController<NSFetchRequestResult>()
+    
+    var pc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    
+    func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UserRegistration")
+        let sorter = NSSortDescriptor(key: "fullName", ascending: true)
+        fetchRequest.sortDescriptors = [sorter]
+        return fetchRequest
+        
+    }
+    
+    func getFRC() -> NSFetchedResultsController<NSFetchRequestResult> {
+        
+        frc = NSFetchedResultsController(fetchRequest: fetchRequest(), managedObjectContext: pc, sectionNameKeyPath: nil, cacheName: nil)
+        
+        return frc
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        frc = getFRC()
+        frc.delegate = self
+        
+        do {
+            
+            try frc.performFetch()
+            
+        }
+            
+        catch {
+            
+            print(error)
+            return
+            
+        }
+        
+        self.tableView.reloadData()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
     }
 
-    // MARK: - Table view data source
+   
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+      
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+       
+        let numberOfRows = frc.sections?[section].numberOfObjects
+        return numberOfRows!
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SignupFetchCell
 
-        // Configure the cell...
+        
+        let item = frc.object(at: indexPath) as! UserRegistration
+        
+        cell.cellName.text = item.fullName
+        cell.cellEmail.text = item.email
+        cell.cellContact.text = item.contact
+        cell.cellPassword1.text = item.password1
+        cell.cellPassword2.text = item.password2
+        
+        cell.cellImage.image = UIImage(data: (item.image)! as Data)
+        
+
 
         return cell
     }
-    */
-
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        
+        tableView.reloadData()
+        
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 160
+        
+    }
+    
+    
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//
+//        let mangedObject : NSManagedObject = frc.object(at: indexPath) as! NSManagedObject
+//        pc.delete(mangedObject)
+//
+//        do {
+//
+//            try pc.save()
+//
+//        }
+//
+//        catch {
+//
+//            print(error)
+//            return
+//
+//        }
+//
+//
+//
+//    }
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:UserRegistration+CoreDataClass.swift">
+      location = "group:BuyItShoppingApp/NSDataSubClass/UserRegistration+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:UserRegistration+CoreDataProperties.swift">
+      location = "group:BuyItShoppingApp/NSDataSubClass/UserRegistration+CoreDataProperties.swift">
    </FileRef>
    <FileRef
       location = "group:BuyItShoppingApp.xcodeproj">

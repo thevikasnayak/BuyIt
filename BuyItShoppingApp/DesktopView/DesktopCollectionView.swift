@@ -11,13 +11,14 @@ import CoreData
 
 private let reuseIdentifier = "Cell"
 
-class DesktopCollectionView: UICollectionViewController, NSFetchedResultsControllerDelegate
+class DesktopCollectionView: UICollectionViewController,NSFetchedResultsControllerDelegate
 {
     
-    
+    //db
     var frc : NSFetchedResultsController = NSFetchedResultsController<NSFetchRequestResult>()
     var pc = (UIApplication.shared .delegate as! AppDelegate).persistentContainer.viewContext
     
+    //db
     func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ItemDesktop")
@@ -28,6 +29,7 @@ class DesktopCollectionView: UICollectionViewController, NSFetchedResultsControl
         
     }
     
+    //db
     func getFRC() -> NSFetchedResultsController<NSFetchRequestResult> {
         
         frc = NSFetchedResultsController(fetchRequest: fetchRequest(), managedObjectContext: pc, sectionNameKeyPath: nil, cacheName: nil)
@@ -38,7 +40,7 @@ class DesktopCollectionView: UICollectionViewController, NSFetchedResultsControl
 
     
     
-
+//db
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -106,6 +108,18 @@ class DesktopCollectionView: UICollectionViewController, NSFetchedResultsControl
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
+        let item = frc.object(at: indexPath) as! ItemDesktop
+        
+        let detailView : DesktopDetailView = self.storyboard?.instantiateViewController(withIdentifier: "detailView") as! DesktopDetailView
+        
+        detailView.dataName = item.name
+        detailView.dataPrice = item.price
+        detailView.dataCompany = item.company
+        detailView.dataModel = item.model
+        detailView.dataQty = item.qty
+        detailView.dataImage = UIImage(data: (item.image)! as Data)
+        
+        self.navigationController?.pushViewController(detailView, animated: true)
         
     }
     

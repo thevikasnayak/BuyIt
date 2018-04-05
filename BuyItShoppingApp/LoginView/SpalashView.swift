@@ -13,13 +13,24 @@ class SpalashView: UIViewController
 {
     @IBOutlet weak var btnSignup: UIButton!
     @IBOutlet weak var btnSignin: UIButton!
+    
+    var swiftColor = UIColor()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        swiftColor = UIColor(red: 3/255, green: 210/255, blue: 125/255, alpha: 1.0)
+
 
     self.btnSignup.layer.cornerRadius=self.btnSignup.frame.size.height/2
         
-    self.btnSignin.layer.cornerRadius=self.btnSignin.frame.size.height/2
+    self.btnSignin.layer.cornerRadius = self.btnSignin.frame.size.height/2
+        btnSignup.layer.borderWidth = 1.5
+        btnSignup.layer.borderColor = swiftColor.cgColor
+        
+      
+        
        
     }
 

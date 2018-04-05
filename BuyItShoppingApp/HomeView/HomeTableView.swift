@@ -12,13 +12,14 @@ import UIKit
 class HomeTableView: UITableViewController
 {
     
-   
- 
-    
     var imageList=["Desktop","Laptop","Mobile","Camera"]
+    var VCNames = [String]()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    VCNames = ["DesktopVC","LaptopVC","MobileVC","CameraVC"]
 
     }
 
@@ -56,7 +57,10 @@ class HomeTableView: UITableViewController
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
     
-    
+        let name = VCNames[indexPath.row]
+        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
+        self.navigationController?.pushViewController(viewController!, animated: true)
+        
     
     }
     

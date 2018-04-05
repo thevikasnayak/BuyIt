@@ -95,15 +95,29 @@ class CameraCollectionView: UICollectionViewController,NSFetchedResultsControlle
         return cell
     }
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        let item = frc.object(at: indexPath) as! ItemCamera
+        
+        let detailView : DesktopDetailView = self.storyboard?.instantiateViewController(withIdentifier: "detailView") as! DesktopDetailView
+        
+        detailView.dataName = item.name
+        detailView.dataPrice = item.price
+        detailView.dataCompany = item.company
+        detailView.dataModel = item.model
+        detailView.dataQty = item.qty
+        detailView.dataImage = UIImage(data: (item.image)! as Data)
+        
+        self.navigationController?.pushViewController(detailView, animated: true)
+        
+    }
+    
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         
         collectionView?.reloadData()
         
     }
 
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
-    {
-       
-    }
+   
 
 }
