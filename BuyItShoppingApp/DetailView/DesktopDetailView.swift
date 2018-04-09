@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-class DesktopDetailView: UIViewController
+class DesktopDetailView: UIViewController,UINavigationControllerDelegate
 {
     
     @IBOutlet weak var ProductImage: UIImageView!
@@ -21,7 +22,6 @@ class DesktopDetailView: UIViewController
     @IBOutlet weak var LabelQty: UILabel!
     var qty = 0;
     
-    
     //for data pass from collection view to this view controller
     var dataImage : UIImage!
     var dataPrice : String!
@@ -30,9 +30,38 @@ class DesktopDetailView: UIViewController
     var dataCompany : String!
     var dataModel : String!
     
+    //for db
+    var item : UserCart? = nil
+    
+    var pc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    //
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //db
+        
+        if item == nil {
+            
+           // self.navigationItem.title = "Add New Data"
+            
+        } else {
+            
+            self.navigationItem.title = item?.name
+            
+            LabelQty.text = item?.qty
+            ProductPrice.text = item?.price
+            ProductName.text = item?.name
+           
+            ProductImage.image = UIImage(data: (item?.image)! as Data)
+        }
+        
+        //
+        
+        
+        
         
         //assign this all outlet to earlier which is uppar created data passing variables
         ProductImage.image = dataImage
@@ -68,14 +97,68 @@ class DesktopDetailView: UIViewController
     
     @IBAction func btnBuyNow(_ sender: Any)
     {
-        
+        if item == nil {
+            
+            let entityDescription = NSEntityDescription.entity(forEntityName: "UserCart", in: pc)
+            
+            let item = UserCart(entity: entityDescription!, insertInto: pc)
+            
+            item.name = ProductName.text
+            item.price = ProductPrice.text
+            item.qty = LabelQty.text
+            
+            item.image = UIImagePNGRepresentation(ProductImage.image!) as Data?
+        }
+        else
+        {
+            item?.name = ProductName.text
+            item?.price = ProductPrice.text
+            item?.qty = LabelQty.text
+            
+            item?.image = UIImagePNGRepresentation(ProductImage.image!) as Data?
+        }
+        do
+        {
+            try pc.save()
+        }
+        catch{
+            print(error)
+            return
+        }
     }
     
     @IBAction func btnAddToCart(_ sender: Any)
     {
-        
+        if item == nil {
+            
+            let entityDescription = NSEntityDescription.entity(forEntityName: "UserCart", in: pc)
+            
+            let item = UserCart(entity: entityDescription!, insertInto: pc)
+            
+            item.name = ProductName.text
+            item.price = ProductPrice.text
+            item.qty = LabelQty.text
+            
+            item.image = UIImagePNGRepresentation(ProductImage.image!) as Data?
+        }
+        else
+        {
+            item?.name = ProductName.text
+            item?.price = ProductPrice.text
+            item?.qty = LabelQty.text
+            
+            item?.image = UIImagePNGRepresentation(ProductImage.image!) as Data?
+        }
+        do
+        {
+            try pc.save()
+        }
+        catch{
+            print(error)
+            return
     }
     
 
 
+}
 }

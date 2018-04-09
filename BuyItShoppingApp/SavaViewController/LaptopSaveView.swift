@@ -30,7 +30,7 @@ class LaptopSaveView: UIViewController,UIImagePickerControllerDelegate, UINaviga
         
         if item == nil {
             
-            self.navigationItem.title = "Add New Data"
+           // self.navigationItem.title = "Add New Data"
             
         } else {
             

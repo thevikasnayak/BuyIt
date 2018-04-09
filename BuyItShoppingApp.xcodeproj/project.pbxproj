@@ -11,7 +11,7 @@
 		2CC00E6028B37BD75C8BACA6 /* Pods_BuyItShoppingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2FBE49797BDF0F3B35672 /* Pods_BuyItShoppingAppUITests.framework */; };
 		8603BD6A20690AE3009E656A /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603BD6920690AE3009E656A /* SignupView.swift */; };
 		8603BD7220690F6A009E656A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603BD7120690F6A009E656A /* HomeTableViewCell.swift */; };
-		8603BD78206911EC009E656A /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603BD77206911EC009E656A /* HomeTableView.swift */; };
+		8603BD78206911EC009E656A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603BD77206911EC009E656A /* HomeTableViewController.swift */; };
 		8603BD7A20691A76009E656A /* DesktopCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603BD7920691A76009E656A /* DesktopCollectionView.swift */; };
 		8603BD7C20691A8E009E656A /* DesktopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603BD7B20691A8E009E656A /* DesktopCollectionViewCell.swift */; };
 		8603BD7E20692B41009E656A /* DesktopSaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603BD7D20692B41009E656A /* DesktopSaveView.swift */; };
@@ -31,10 +31,11 @@
 		86377C34206E8D3300A944F2 /* SideMenuAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86377C33206E8D3300A944F2 /* SideMenuAboutView.swift */; };
 		86377C36206E8D5500A944F2 /* SideMenuProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86377C35206E8D5500A944F2 /* SideMenuProfileView.swift */; };
 		86377C38206EAC8000A944F2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86377C37206EAC8000A944F2 /* MessageUI.framework */; };
+		864A2B0020773A4F00B6FC2B /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A2AFF20773A4F00B6FC2B /* CartViewController.swift */; };
+		864A2B0220773A9900B6FC2B /* CartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A2B0120773A9900B6FC2B /* CartViewCell.swift */; };
 		86543022206CB76400FACA36 /* DesktopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86543021206CB76400FACA36 /* DesktopDetailView.swift */; };
-		86543024206CB7A200FACA36 /* LaptopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86543023206CB7A200FACA36 /* LaptopDetailView.swift */; };
-		86543026206CB7BA00FACA36 /* MobileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86543025206CB7BA00FACA36 /* MobileDetailView.swift */; };
-		86543028206CB7DB00FACA36 /* CameraDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86543027206CB7DB00FACA36 /* CameraDetailView.swift */; };
+		8673FEC22078985C0089B0AB /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673FEC12078985C0089B0AB /* MenuViewCell.swift */; };
+		8673FEC4207898730089B0AB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673FEC3207898730089B0AB /* MenuViewController.swift */; };
 		86AD5AB42068F2610038FC21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AD5AB32068F2610038FC21 /* AppDelegate.swift */; };
 		86AD5AB92068F2610038FC21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86AD5AB72068F2610038FC21 /* Main.storyboard */; };
 		86AD5ABC2068F2610038FC21 /* BuyItShoppingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86AD5ABA2068F2610038FC21 /* BuyItShoppingApp.xcdatamodeld */; };
@@ -45,7 +46,6 @@
 		86AD5AE62068F2790038FC21 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AD5AE52068F2790038FC21 /* CoreData.framework */; };
 		86AD5AF02068F5CA0038FC21 /* SpalashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AD5AEF2068F5CA0038FC21 /* SpalashView.swift */; };
 		86AD5AF22068FA020038FC21 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AD5AF12068FA020038FC21 /* LoginView.swift */; };
-		86D3569D206B768E00AE2AE8 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3569C206B768E00AE2AE8 /* CartView.swift */; };
 		BD27AE0929C4E30E170EDA2F /* Pods_BuyItShoppingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4974FDBA2FA4BAFEA4E2ED06 /* Pods_BuyItShoppingApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +75,7 @@
 		85409047E0E9BE425E92CFD1 /* Pods-BuyItShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyItShoppingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyItShoppingApp/Pods-BuyItShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8603BD6920690AE3009E656A /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		8603BD7120690F6A009E656A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		8603BD77206911EC009E656A /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		8603BD77206911EC009E656A /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		8603BD7920691A76009E656A /* DesktopCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopCollectionView.swift; sourceTree = "<group>"; };
 		8603BD7B20691A8E009E656A /* DesktopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopCollectionViewCell.swift; sourceTree = "<group>"; };
 		8603BD7D20692B41009E656A /* DesktopSaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopSaveView.swift; sourceTree = "<group>"; };
@@ -95,10 +95,11 @@
 		86377C33206E8D3300A944F2 /* SideMenuAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuAboutView.swift; sourceTree = "<group>"; };
 		86377C35206E8D5500A944F2 /* SideMenuProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuProfileView.swift; sourceTree = "<group>"; };
 		86377C37206EAC8000A944F2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		864A2AFF20773A4F00B6FC2B /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		864A2B0120773A9900B6FC2B /* CartViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewCell.swift; sourceTree = "<group>"; };
 		86543021206CB76400FACA36 /* DesktopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopDetailView.swift; sourceTree = "<group>"; };
-		86543023206CB7A200FACA36 /* LaptopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaptopDetailView.swift; sourceTree = "<group>"; };
-		86543025206CB7BA00FACA36 /* MobileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailView.swift; sourceTree = "<group>"; };
-		86543027206CB7DB00FACA36 /* CameraDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDetailView.swift; sourceTree = "<group>"; };
+		8673FEC12078985C0089B0AB /* MenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
+		8673FEC3207898730089B0AB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		86AD5AB02068F2610038FC21 /* BuyItShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyItShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86AD5AB32068F2610038FC21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86AD5AB82068F2610038FC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,7 +116,6 @@
 		86AD5AE52068F2790038FC21 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		86AD5AEF2068F5CA0038FC21 /* SpalashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpalashView.swift; sourceTree = "<group>"; };
 		86AD5AF12068FA020038FC21 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		86D3569C206B768E00AE2AE8 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		D9D0B7DA817400FDD93AA6E1 /* Pods-BuyItShoppingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyItShoppingAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyItShoppingAppTests/Pods-BuyItShoppingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E57B156FADE554C22AB60AD7 /* Pods_BuyItShoppingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuyItShoppingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC601C519C249CA89381F15 /* Pods-BuyItShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyItShoppingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyItShoppingApp/Pods-BuyItShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				8603BD7120690F6A009E656A /* HomeTableViewCell.swift */,
-				8603BD77206911EC009E656A /* HomeTableView.swift */,
+				8603BD77206911EC009E656A /* HomeTableViewController.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -197,11 +197,17 @@
 			isa = PBXGroup;
 			children = (
 				86543021206CB76400FACA36 /* DesktopDetailView.swift */,
-				86543023206CB7A200FACA36 /* LaptopDetailView.swift */,
-				86543025206CB7BA00FACA36 /* MobileDetailView.swift */,
-				86543027206CB7DB00FACA36 /* CameraDetailView.swift */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		8673FEC0207898300089B0AB /* MenuSubView */ = {
+			isa = PBXGroup;
+			children = (
+				8673FEC12078985C0089B0AB /* MenuViewCell.swift */,
+				8673FEC3207898730089B0AB /* MenuViewController.swift */,
+			);
+			path = MenuSubView;
 			sourceTree = "<group>";
 		};
 		86AD5AA72068F2610038FC21 = {
@@ -240,6 +246,7 @@
 				86AD5AE72068F43B0038FC21 /* SavaViewController */,
 				86543020206CB6F900FACA36 /* DetailView */,
 				86D3569B206B766000AE2AE8 /* CartView */,
+				8673FEC0207898300089B0AB /* MenuSubView */,
 				86377C2E206E8CD000A944F2 /* SideMenu */,
 				860FAD4F20754ADB001589C0 /* Fetch Data */,
 				86AD5AB72068F2610038FC21 /* Main.storyboard */,
@@ -348,7 +355,8 @@
 		86D3569B206B766000AE2AE8 /* CartView */ = {
 			isa = PBXGroup;
 			children = (
-				86D3569C206B768E00AE2AE8 /* CartView.swift */,
+				864A2AFF20773A4F00B6FC2B /* CartViewController.swift */,
+				864A2B0120773A9900B6FC2B /* CartViewCell.swift */,
 			);
 			path = CartView;
 			sourceTree = "<group>";
@@ -649,7 +657,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				86AD5AF02068F5CA0038FC21 /* SpalashView.swift in Sources */,
+				8673FEC4207898730089B0AB /* MenuViewController.swift in Sources */,
 				8603BD8C20699083009E656A /* CameraSaveView.swift in Sources */,
+				864A2B0220773A9900B6FC2B /* CartViewCell.swift in Sources */,
 				860FAD5320754B45001589C0 /* SignupFetchCell.swift in Sources */,
 				86377C30206E8D0700A944F2 /* SideMenuCallView.swift in Sources */,
 				8603BD8A20698254009E656A /* MobileSaveView.swift in Sources */,
@@ -657,15 +667,11 @@
 				86377C32206E8D1E00A944F2 /* SideMenuEmailView.swift in Sources */,
 				8603BD7E20692B41009E656A /* DesktopSaveView.swift in Sources */,
 				860FAD5120754B27001589C0 /* SignupFetchData.swift in Sources */,
-				8603BD78206911EC009E656A /* HomeTableView.swift in Sources */,
+				8603BD78206911EC009E656A /* HomeTableViewController.swift in Sources */,
 				8603BD862069813B009E656A /* MobileCollectionViewCell.swift in Sources */,
-				86543024206CB7A200FACA36 /* LaptopDetailView.swift in Sources */,
-				86543028206CB7DB00FACA36 /* CameraDetailView.swift in Sources */,
 				8603BD82206973E6009E656A /* LaptopCollectionView.swift in Sources */,
 				86AD5AF22068FA020038FC21 /* LoginView.swift in Sources */,
 				8603BD8820698151009E656A /* MobileCollectionView.swift in Sources */,
-				86543026206CB7BA00FACA36 /* MobileDetailView.swift in Sources */,
-				86D3569D206B768E00AE2AE8 /* CartView.swift in Sources */,
 				86AD5AB42068F2610038FC21 /* AppDelegate.swift in Sources */,
 				8603BD7220690F6A009E656A /* HomeTableViewCell.swift in Sources */,
 				86377C36206E8D5500A944F2 /* SideMenuProfileView.swift in Sources */,
@@ -677,6 +683,8 @@
 				86377C34206E8D3300A944F2 /* SideMenuAboutView.swift in Sources */,
 				8603BD7A20691A76009E656A /* DesktopCollectionView.swift in Sources */,
 				8603BD84206973F8009E656A /* LaptopCollectionViewCell.swift in Sources */,
+				8673FEC22078985C0089B0AB /* MenuViewCell.swift in Sources */,
+				864A2B0020773A4F00B6FC2B /* CartViewController.swift in Sources */,
 				8603BD8E206990BD009E656A /* CameraCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

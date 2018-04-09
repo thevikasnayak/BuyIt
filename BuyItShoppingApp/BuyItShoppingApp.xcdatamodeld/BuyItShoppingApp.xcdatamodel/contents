@@ -32,6 +32,12 @@
         <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="qty" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="UserCart" representedClassName="UserCart" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qty" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="UserRegistration" representedClassName="UserRegistration" syncable="YES" codeGenerationType="class">
         <attribute name="contact" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
@@ -46,5 +52,6 @@
         <element name="ItemLaptop" positionX="-54" positionY="-9" width="128" height="135"/>
         <element name="ItemMobile" positionX="-36" positionY="9" width="128" height="135"/>
         <element name="UserRegistration" positionX="-36" positionY="54" width="128" height="135"/>
+        <element name="UserCart" positionX="-36" positionY="63" width="128" height="105"/>
     </elements>
 </model>

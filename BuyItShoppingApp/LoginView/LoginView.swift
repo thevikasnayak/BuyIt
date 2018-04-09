@@ -1,4 +1,4 @@
-//
+
 //  LoginView.swift
 //  BuyItShoppingApp
 //
@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-class LoginView: UIViewController, UITextFieldDelegate
+class LoginView: UIViewController, UITextFieldDelegate,NSFetchedResultsControllerDelegate
 {
     @IBOutlet weak var btnGoogle: UIButton!
     @IBOutlet weak var btnFacebook: UIButton!
@@ -20,9 +21,21 @@ class LoginView: UIViewController, UITextFieldDelegate
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    //login
+    var result = NSArray()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //db
+        
+        
+        
+        //
+        
+        
         
         
         txtPassword.delegate = self
@@ -71,7 +84,25 @@ class LoginView: UIViewController, UITextFieldDelegate
     
     @IBAction func btnLogin(_ sender: Any)
     {
-        
+        //msg box
+        if txtUserName.text == "" && txtPassword.text == ""
+        {
+            let alert = UIAlertController(title: "Information", message: "Please enter all the fields", preferredStyle: .alert)
+            
+            let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            let cancel = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+            
+            alert.addAction(ok)
+            alert.addAction(cancel)
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+        else
+            
+        {
+
+        self.CheckForUserNameAndPasswordMatch(username : txtUserName.text! as String, password : txtPassword.text! as String)
+    }
     }
     
     
@@ -87,6 +118,51 @@ class LoginView: UIViewController, UITextFieldDelegate
     }
     
     
+    func CheckForUserNameAndPasswordMatch( username: String, password : String)
+    {
+        let app = UIApplication.shared.delegate as! AppDelegate
+        
+        let context = app.persistentContainer.viewContext
+        
+        let fetchrequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UserRegistration")
+        
+        let predicate = NSPredicate(format: "email = %@", username)
+        
+        fetchrequest.predicate = predicate
+        do
+        {
+            result = try context.fetch(fetchrequest) as NSArray
+            
+            if result.count>0
+            {
+                let objectentity = result.firstObject as! UserRegistration
+                
+                if objectentity.email == username && objectentity.password1 == password
+                {
+                    print("Login Succesfully")
+                    let lv : HomeTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeTableViewController
+                    self.navigationController?.pushViewController(lv, animated: true)
+                    
+                }
+                else
+                {
+                    print("Wrong username or password !!!")
+                    
+                }
+            }
+        }
+            
+        catch
+        {
+            let fetch_error = error as NSError
+            print("error", fetch_error.localizedDescription)
+        }
+        
+    }
+    
+    
+    
+    
     
     
     /*
@@ -100,3 +176,4 @@ class LoginView: UIViewController, UITextFieldDelegate
     */
 
 }
+

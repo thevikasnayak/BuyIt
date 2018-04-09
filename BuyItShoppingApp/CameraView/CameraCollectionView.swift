@@ -33,11 +33,6 @@ class CameraCollectionView: UICollectionViewController,NSFetchedResultsControlle
         
         return frc
         
-        
-        
-       
-        
-        
     }
 
     override func viewDidLoad() {

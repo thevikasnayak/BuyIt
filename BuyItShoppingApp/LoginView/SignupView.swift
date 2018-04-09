@@ -46,7 +46,7 @@ class SignupView: UIViewController,UIImagePickerControllerDelegate,UINavigationC
         
         if item == nil {
             
-            self.navigationItem.title = "Add New Data"
+           // self.navigationItem.title = "Add New Data"
             
         } else {
             

@@ -7,45 +7,125 @@
 //
 
 import UIKit
+import CoreData
 
-class CartViewController: UITableViewController {
+class CartViewController: UIViewController,NSFetchedResultsControllerDelegate, UITableViewDelegate, UITableViewDataSource
+
+{
+    var total = 0
+    var swiftColor = UIColor()
+    
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var totalLabel: UILabel!
+    @IBOutlet var checkoutButton: UIButton!
+    
+    
+    //db
+    var fetchecResult : NSFetchedResultsController = NSFetchedResultsController<NSFetchRequestResult>()
+    
+    var pc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    //db
+    func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UserCart")
+       let sorter = NSSortDescriptor(key: "name", ascending: true)
+        fetchRequest.sortDescriptors = [sorter]
+        return fetchRequest
+        
+    }
+    
+    //db
+    func getCartData() -> NSFetchedResultsController<NSFetchRequestResult> {
+        
+        fetchecResult = NSFetchedResultsController(fetchRequest: fetchRequest(), managedObjectContext: pc, sectionNameKeyPath: nil, cacheName: nil)
+        
+        return fetchecResult
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
+        swiftColor = UIColor(red: 3/255, green: 210/255, blue: 125/255, alpha: 1.0)
+        
+        
+         //self.totalLabel.layer.cornerRadius = self.btnSignin.frame.size.height/2
+        self.totalLabel.layer.borderWidth = 1.5
+        self.totalLabel.layer.borderColor = swiftColor.cgColor
+        
+        
+        fetchecResult = getCartData()
+        fetchecResult.delegate = self
+        
+        do {
+            
+            try fetchecResult.performFetch()
+            
+        }
+            
+        catch {
+            
+            print(error)
+            return
+            
+        }
+        
+        self.tableView.reloadData()
+        
+        for object  in fetchecResult.fetchedObjects! {
+            let item = object as! UserCart
+            total = total + Int(item.price!)!
+            
+            totalLabel.text = String(total)
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+   
+     func numberOfSections(in tableView: UITableView) -> Int {
+       
+        return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
+        let numberOfRows = fetchecResult.sections?[section].numberOfObjects
+        return numberOfRows!
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+    
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CartViewCell
+        
+        let item = fetchecResult.object(at: indexPath) as! UserCart
+        
+        cell.cellName.text = item.name
+        cell.cellQty.text = item.qty
+        cell.cellPrice.text = item.price
+        cell.cellImage.image = UIImage(data: (item.image)! as Data)
+        
         return cell
     }
-    */
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        
+        tableView.reloadData()
+        
+    }
+    
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 130
+        
+    }
+    
+    
 
     /*
     // Override to support conditional editing of the table view.

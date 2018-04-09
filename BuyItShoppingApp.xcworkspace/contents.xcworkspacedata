@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BuyItShoppingApp/NSDataSubClass/UserCart+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:BuyItShoppingApp/NSDataSubClass/UserCart+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:BuyItShoppingApp/NSDataSubClass/UserRegistration+CoreDataClass.swift">
    </FileRef>
    <FileRef
