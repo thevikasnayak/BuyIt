@@ -29,15 +29,6 @@ class LoginView: UIViewController, UITextFieldDelegate,NSFetchedResultsControlle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //db
-        
-        
-        
-        //
-        
-        
-        
-        
         txtPassword.delegate = self
         txtUserName.delegate = self
         

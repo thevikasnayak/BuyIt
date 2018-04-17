@@ -1003,7 +1003,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqj-mW-ihm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3032" y="1935"/>
+            <point key="canvasLocation" x="2578" y="1925"/>
         </scene>
         <!--Cart View Controller-->
         <scene sceneID="H8X-20-v2E">
@@ -1143,7 +1143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFq-C9-cW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4561.875" y="1924.6478873239437"/>
+            <point key="canvasLocation" x="3555" y="1957"/>
         </scene>
         <!--Desktop Save View-->
         <scene sceneID="G5a-gM-E4p">
@@ -1414,7 +1414,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dp-YF-36b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849.375" y="136.26760563380282"/>
+            <point key="canvasLocation" x="1056" y="-13"/>
         </scene>
         <!--Signup View-->
         <scene sceneID="O2j-Tq-Dtf">
@@ -1596,7 +1596,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Om9-Iu-B6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1522.5" y="137.32394366197184"/>
+            <point key="canvasLocation" x="1999" y="-14"/>
         </scene>
         <!--Signup Fetch Data-->
         <scene sceneID="3lG-60-rne">
@@ -1673,7 +1673,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5C-vF-SwI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2379.375" y="137.32394366197184"/>
+            <point key="canvasLocation" x="2576" y="2968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zPj-nN-aV7">
@@ -1704,7 +1704,7 @@
         <!--Side Menu Profile View-->
         <scene sceneID="CPv-Ks-IYv">
             <objects>
-                <viewController id="ejy-2v-nRZ" customClass="SideMenuProfileView" customModule="BuyItShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="ejy-2v-nRZ" customClass="SideMenuProfileView" customModule="BuyItShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="11G-Lt-4We">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1857,7 +1857,7 @@
         <!--Side Menu Email View-->
         <scene sceneID="9KL-Ct-sJq">
             <objects>
-                <viewController id="ASu-sa-PGr" customClass="SideMenuEmailView" customModule="BuyItShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmailVC" id="ASu-sa-PGr" customClass="SideMenuEmailView" customModule="BuyItShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TSQ-cK-LRT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1924,7 +1924,7 @@
         <!--Side Menu Call View-->
         <scene sceneID="EoF-9B-G3H">
             <objects>
-                <viewController id="MzS-K5-Mc2" customClass="SideMenuCallView" customModule="BuyItShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CallVC" id="MzS-K5-Mc2" customClass="SideMenuCallView" customModule="BuyItShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d2q-K6-k6A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2005,7 +2005,7 @@
         <!--Side Menu About View-->
         <scene sceneID="jJQ-jB-DI8">
             <objects>
-                <viewController id="4vQ-qt-zbc" customClass="SideMenuAboutView" customModule="BuyItShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutVC" id="4vQ-qt-zbc" customClass="SideMenuAboutView" customModule="BuyItShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j3Q-94-7XU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2179,6 +2179,6 @@
         <image name="sideMail" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hW1-fY-bIE"/>
+        <segue reference="Q8l-3p-Uos"/>
     </inferredMetricsTieBreakers>
 </document>

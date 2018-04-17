@@ -13,6 +13,8 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
     var imageList = ["user24","email24","phone24","about24"]
     var nameList = ["Profile","Email us","Contact us","About BuyIt"]
     
+     var VCNames = [String]()
+    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -20,6 +22,7 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
 
+         VCNames = ["ProfileVC","EmailVC","CallVC","AboutVC"]
       
     }
 
@@ -44,10 +47,14 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
-//
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        
+        let name = VCNames[indexPath.row]
+        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
+
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
       return 55
     }
